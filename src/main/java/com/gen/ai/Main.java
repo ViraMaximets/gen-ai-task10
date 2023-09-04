@@ -18,10 +18,6 @@ public class Main {
             return false;
         }
 
-        // not contain any whitespace characters
-        if (Pattern.matches(".*\\s.*", input)) {
-            return false;
-        }
-        return true;
+        return Pattern.matches(".*\\s.*", input);
     }
 }
