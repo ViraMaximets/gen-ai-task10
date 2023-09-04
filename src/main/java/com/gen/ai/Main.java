@@ -18,6 +18,6 @@ public class Main {
             return false;
         }
 
-        return Pattern.matches(".*\\s.*", input);
+        return !Pattern.matches(".*\\s.*", input);
     }
 }
